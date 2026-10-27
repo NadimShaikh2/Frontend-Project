@@ -18,10 +18,10 @@ export default function Hero() {
 
       <div className="container-xl relative grid items-center gap-14 lg:grid-cols-2">
         <div className="flex flex-col items-start gap-7">
-          <Reveal>
-            <div className="flex items-center gap-4 rounded-2xl border border-gold-400/25 bg-white/[0.03] px-5 py-4 shadow-luxe backdrop-blur-sm">
-              <span className="relative flex h-14 w-14 shrink-0 items-center justify-center rounded-xl bg-charcoal-900 ring-1 ring-gold-400/40 shadow-gold-glow">
-                <svg viewBox="0 0 48 48" className="h-14 w-14" aria-hidden="true">
+          <Reveal className="w-full">
+            <div className="flex w-full items-center gap-5 rounded-2xl border border-gold-400/25 bg-white/[0.03] px-6 py-5 shadow-luxe backdrop-blur-sm sm:gap-6 sm:px-8 sm:py-6">
+              <span className="relative flex h-16 w-16 shrink-0 items-center justify-center rounded-xl bg-charcoal-900 ring-1 ring-gold-400/40 shadow-gold-glow sm:h-[72px] sm:w-[72px]">
+                <svg viewBox="0 0 48 48" className="h-16 w-16 sm:h-[72px] sm:w-[72px]" aria-hidden="true">
                   <defs>
                     <linearGradient id="heroFkGold" x1="0" y1="0" x2="1" y2="1">
                       <stop offset="0%" stopColor="#ecd9ad" />
@@ -49,13 +49,14 @@ export default function Hero() {
                   </text>
                 </svg>
               </span>
-              <div className="flex flex-col leading-none">
-                <span className="font-heading text-2xl font-extrabold tracking-tight sm:text-3xl">
+              <div className="flex min-w-0 flex-1 flex-col justify-center">
+                <span className="font-heading text-2xl font-extrabold leading-tight tracking-tight sm:text-[2rem]">
                   <span className="heading-gradient">FK</span>{" "}
                   <span className="text-white">Tiles Work</span>
                 </span>
-                <span className="mt-1.5 text-[0.62rem] font-semibold uppercase tracking-[0.3em] text-gold-300/90">
+                <span className="mt-2 flex items-center gap-3 text-[0.6rem] font-semibold uppercase tracking-[0.32em] text-gold-300/90 sm:text-[0.68rem]">
                   Premium Tiles &amp; Granite
+                  <span className="hidden h-px flex-1 bg-gradient-to-r from-gold-400/50 to-transparent sm:block" aria-hidden="true" />
                 </span>
               </div>
             </div>
