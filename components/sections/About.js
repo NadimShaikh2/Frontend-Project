@@ -69,7 +69,7 @@ export default function About() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, margin: "-80px" }}
-          className="grid gap-5 sm:grid-cols-2"
+          className="grid grid-cols-2 gap-3 sm:gap-5"
         >
           {highlights.map((item) => {
             const Icon = item.icon;
@@ -77,7 +77,7 @@ export default function About() {
               <motion.div
                 key={item.title}
                 variants={staggerItem}
-                className="card-surface flex flex-col gap-3 p-6 transition hover:border-gold-400/30 hover:bg-white/[0.05]"
+                className="card-surface flex flex-col gap-3 p-4 transition hover:border-gold-400/30 hover:bg-white/[0.05] sm:p-6"
               >
                 <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-gold-400/10 text-gold-300 ring-1 ring-gold-400/20">
                   <Icon className="h-6 w-6" />

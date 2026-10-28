@@ -48,7 +48,7 @@ export default function Process() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, margin: "-80px" }}
-          className="relative grid w-full gap-6 lg:grid-cols-4"
+          className="relative grid w-full grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-4"
         >
           <div className="pointer-events-none absolute left-0 right-0 top-9 hidden h-px bg-gradient-to-r from-transparent via-gold-400/40 to-transparent lg:block" aria-hidden="true" />
           {steps.map((step) => {

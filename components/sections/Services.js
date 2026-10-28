@@ -78,7 +78,7 @@ export default function Services() {
           whileInView="show"
           viewport={{ once: true, margin: "-60px" }}
           transition={{ staggerChildren: 0.05 }}
-          className="grid w-full gap-6 sm:grid-cols-2 lg:grid-cols-3"
+          className="grid w-full grid-cols-2 gap-3 sm:gap-6 lg:grid-cols-3"
         >
           {services.map((s, idx) => (
             <motion.figure key={s.image} variants={item} className="card-surface overflow-hidden">
@@ -89,7 +89,7 @@ export default function Services() {
                 aria-label={`View ${s.title} full size`}
               >
                 {/* full image, uncropped, on a dark stage */}
-                <div className="relative flex h-64 w-full items-center justify-center bg-charcoal-950/60 p-2">
+                <div className="relative flex h-44 w-full items-center justify-center bg-charcoal-950/60 p-2 sm:h-64">
                   <Image
                     src={s.image}
                     alt={s.title}
